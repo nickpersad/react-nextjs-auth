@@ -1,5 +1,7 @@
 {
   "name": "react-nextjs-auth",
+  "version": "1.0.0",
+  "description": "React app with login, signup, and home screen routing.",
   "scripts": {
     "dev": "next",
     "build": "next build",
