@@ -1,7 +1,8 @@
 {
   "build": {
     "env": {
-      "FAUNA_SERVER_KEY": "@fauna-secret-key"
+      "SERVER": "@server-url",
+      "PORT": "@server-port"
     }
   }
 }
