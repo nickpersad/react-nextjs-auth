@@ -1,14 +1,11 @@
-import { query as q } from 'faunadb'
-import cookie from 'cookie'
-import { SECRET_COOKIE } from '../../utils/cookie-auth'
+import cookie from 'cookie';
+import { SECRET_COOKIE } from '../../utils/cookie-auth';
 
 export default async (req, res) => {
-  const cookies = cookie.parse(req.headers.cookie ?? '')
-  const secret = cookies[SECRET_COOKIE]
+  const cookies = cookie.parse(req.headers.cookie ?? '');
+  const secret = cookies[SECRET_COOKIE];
 
   if (!secret) {
-    return res.status(401).send('Auth cookie missing.')
+    return res.status(401).send('Auth cookie missing.');
   }
-
-  // res.status(200).json({ userId: await profileApi(secret) })
 }
